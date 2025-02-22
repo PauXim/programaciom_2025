@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <TITLE>Inicio</TITLE>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form action="#"method="get">
+            <fieldset>
+                <legend>informacion general</legend>
+                <div>
+                    <label for="">Nombres:</label>
+                    <input 
+                    type ="text" 
+                    name="nombre"
+                    placeholder="Ingrese su nombre completo"
+                    maxlength="60" 
+                    value="Pepito"
+                    required>
+                </div>
+                <div>
+                    <label for="">Contraseña:</label>
+                    <input type="password" name="pwd">
+                </div>
+                <div>
+                    <label for="">Email:</label>
+                    <input type="email" name="correo"> 
+                </div>
+                <div>
+                    <label for="">Edad:</label>
+                    <input type="number" name="edad" value="18" min="14" max="120">   
+                </div>
+                <div>
+                    <label for="">fecha de cumpleaños</label>
+                    <input type="date" name="cumpleanios">  <br>
+                    <input type="datetime" name="cumpleanios2"> 
+                    <input type="datetime-local" name="cumpleanios3">
+                </div>
+                <div>
+                    <label for="">Color favorito:</label>
+                    <input type="color" name="colorFav">   
+                </div>
+                <div>
+                    <label for="">Archivo:</label>
+                    <input type="File" name="archivo" multiple accept=".pdf">   
+                </div>
+                <div>
+                    <label for="">Hola:</label>
+                    <input type="Time" name="hora">   
+                </div>
+                <div>
+                    <label for="">Mes</label>
+                    <input type="Month" name="mes">   
+                </div>
+                <div>
+                    <label for="">Semana</label>
+                    <input type="week" name="Semana">   
+                </div>
+                <div>
+                    <label for="">Categoria
+                    </label>
+                    <label>
+                        <input type="Radio" name="catg1" value="A">
+                        Categoria A
+                    </label>
+                    <label>
+                        <input type="Radio" name="catg2" value="B">
+                        Categoria B
+                    </label>
+                    <label>
+                        <input type="Radio" name="catg3" value="C">
+                        Categoria C
+                    </label>
+                </div>
+               <div> 
+                   <label for="">Pasatiempos</label>
+                  <Label>
+                       <input type="checkbox" name="pasatiempoA" >   
+                       Opcion 1
+                    </label>
+                    <label>
+                       <input type="checkbox" name="pasatiempoB" >   
+                       Opcion 2
+                    </label>
+                    <label>
+                        <input type="checkbox" name="pasatiempoC" >   
+                        Opcion 3
+                   </label>
+               </div>
+               <div>
+                   <label for="">Ciudad</label>
+                    <select name="ciudad">
+                       <option value="1">Tunja</option>
+                         <option value="2" selected>Duitama</option>
+                        <option value="3">Sogamoso</option>
+                     </select>
+
+                </div>  
+                <div>
+                    <label for="">Descripcion</label>
+                    <textarea name="desc" clos="12" rows="6"></textarea><!-- clumnas y lineas-->
+                </div>
+
+            </fieldset>
+            <div>
+                <input type="button" value ="Boton">
+                <input type="reset" value ="Borrar">
+                <input type="submit" value ="Enviar">
+                <br>
+                <button type="button">Boton</button>
+                <button type="reset">Borar</button>
+                <button type="submit">Enviar</button>
+                
+            </div>
+            
+        </form>
+    </body>
+</html>
